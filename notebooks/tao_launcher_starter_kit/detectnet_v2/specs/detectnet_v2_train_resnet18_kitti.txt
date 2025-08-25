@@ -15,8 +15,8 @@ augmentation_config {
   preprocessing {
     output_image_width: 544
     output_image_height: 960
-    min_bbox_width: 1.0
-    min_bbox_height: 1.0
+    min_bbox_width: 22.0
+    min_bbox_height: 70.0
     output_image_channel: 3
   }
   spatial_augmentation {
@@ -74,7 +74,7 @@ evaluation_config {
     value {
       minimum_height: 20
       maximum_height: 9999
-      minimum_width: 10
+      minimum_width: 18
       maximum_width: 9999
     }
   }
