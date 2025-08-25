@@ -13,8 +13,8 @@ dataset_config {
 }
 augmentation_config {
   preprocessing {
-    output_image_width: 1248
-    output_image_height: 384
+    output_image_width: 544
+    output_image_height: 960
     min_bbox_width: 1.0
     min_bbox_height: 1.0
     output_image_channel: 3
@@ -39,9 +39,9 @@ postprocessing_config {
     value {
       clustering_config {
         clustering_algorithm: DBSCAN
-        dbscan_confidence_threshold: 0.9
-        coverage_threshold: 0.00749999983236
-        dbscan_eps: 0.230000004172
+        dbscan_confidence_threshold: 0.693671458753017
+        coverage_threshold: 0.21666836936549047
+        dbscan_eps: 0.15584185873130887
         dbscan_min_samples: 1
         minimum_bounding_box_height: 20
       }
