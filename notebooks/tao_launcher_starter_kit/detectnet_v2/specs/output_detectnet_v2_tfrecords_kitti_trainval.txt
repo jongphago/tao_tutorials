@@ -1,0 +1,106 @@
+Converting Tfrecords for kitti trainval dataset
+2025-08-25 06:18:36,590 [TAO Toolkit] [INFO] root 160: Registry: ['nvcr.io']
+2025-08-25 06:18:36,673 [TAO Toolkit] [INFO] nvidia_tao_cli.components.instance_handler.local_instance 360: Running command in container: nvcr.io/nvidia/tao/tao-toolkit:5.0.0-tf1.15.5
+2025-08-25 06:18:36,897 [TAO Toolkit] [INFO] nvidia_tao_cli.components.docker_handler.docker_handler 301: Printing tty value True
+2025-08-25 06:18:37.678310: I tensorflow/stream_executor/platform/default/dso_loader.cc:50] Successfully opened dynamic library libcudart.so.12
+2025-08-25 06:18:37,742 [TAO Toolkit] [WARNING] tensorflow 40: Deprecation warnings have been disabled. Set TF_ENABLE_DEPRECATION_WARNINGS=1 to re-enable them.
+Using TensorFlow backend.
+2025-08-25 06:18:39,577 [TAO Toolkit] [WARNING] tensorflow 43: TensorFlow will not use sklearn by default. This improves performance in some cases. To enable sklearn export the environment variable  TF_ALLOW_IOLIBS=1.
+2025-08-25 06:18:39,628 [TAO Toolkit] [WARNING] tensorflow 42: TensorFlow will not use Dask by default. This improves performance in some cases. To enable Dask export the environment variable  TF_ALLOW_IOLIBS=1.
+2025-08-25 06:18:39,634 [TAO Toolkit] [WARNING] tensorflow 43: TensorFlow will not use Pandas by default. This improves performance in some cases. To enable Pandas export the environment variable  TF_ALLOW_IOLIBS=1.
+2025-08-25 06:18:41,697 [TAO Toolkit] [WARNING] matplotlib 500: Matplotlib created a temporary config/cache directory at /tmp/matplotlib-uvwfvgzh because the default path (/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+2025-08-25 06:18:41,972 [TAO Toolkit] [INFO] matplotlib.font_manager 1633: generated new fontManager
+WARNING:tensorflow:Deprecation warnings have been disabled. Set TF_ENABLE_DEPRECATION_WARNINGS=1 to re-enable them.
+Using TensorFlow backend.
+WARNING:tensorflow:TensorFlow will not use sklearn by default. This improves performance in some cases. To enable sklearn export the environment variable  TF_ALLOW_IOLIBS=1.
+2025-08-25 06:18:44,077 [TAO Toolkit] [WARNING] tensorflow 43: TensorFlow will not use sklearn by default. This improves performance in some cases. To enable sklearn export the environment variable  TF_ALLOW_IOLIBS=1.
+WARNING:tensorflow:TensorFlow will not use Dask by default. This improves performance in some cases. To enable Dask export the environment variable  TF_ALLOW_IOLIBS=1.
+2025-08-25 06:18:44,125 [TAO Toolkit] [WARNING] tensorflow 42: TensorFlow will not use Dask by default. This improves performance in some cases. To enable Dask export the environment variable  TF_ALLOW_IOLIBS=1.
+WARNING:tensorflow:TensorFlow will not use Pandas by default. This improves performance in some cases. To enable Pandas export the environment variable  TF_ALLOW_IOLIBS=1.
+2025-08-25 06:18:44,130 [TAO Toolkit] [WARNING] tensorflow 43: TensorFlow will not use Pandas by default. This improves performance in some cases. To enable Pandas export the environment variable  TF_ALLOW_IOLIBS=1.
+2025-08-25 06:18:44,771 [TAO Toolkit] [INFO] root 2102: Starting Object Detection Dataset Convert.
+2025-08-25 06:18:44,772 [TAO Toolkit] [INFO] nvidia_tao_tf1.cv.detectnet_v2.dataio.build_converter 87: Instantiating a kitti converter
+2025-08-25 06:18:44,772 [TAO Toolkit] [INFO] root 2102: Instantiating a kitti converter
+2025-08-25 06:18:44,772 [TAO Toolkit] [INFO] nvidia_tao_tf1.cv.detectnet_v2.dataio.dataset_converter_lib 71: Creating output directory /workspace/tao-experiments/data/tfrecords/kitti_trainval
+2025-08-25 06:18:44,772 [TAO Toolkit] [INFO] root 2102: Generating partitions
+2025-08-25 06:18:45,214 [TAO Toolkit] [INFO] nvidia_tao_tf1.cv.detectnet_v2.dataio.kitti_converter_lib 176: Num images in
+Train: 8678	Val: 1412
+2025-08-25 06:18:45,214 [TAO Toolkit] [INFO] root 2102: Num images in
+Train: 8678	Val: 1412
+2025-08-25 06:18:45,214 [TAO Toolkit] [INFO] nvidia_tao_tf1.cv.detectnet_v2.dataio.kitti_converter_lib 197: Validation data in partition 0. Hence, while choosing the validationset during training choose validation_fold 0.
+2025-08-25 06:18:45,214 [TAO Toolkit] [INFO] root 2102: Validation data in partition 0. Hence, while choosing the validationset during training choose validation_fold 0.
+2025-08-25 06:18:45,218 [TAO Toolkit] [INFO] nvidia_tao_tf1.cv.detectnet_v2.dataio.dataset_converter_lib 166: Writing partition 0, shard 0
+2025-08-25 06:18:45,218 [TAO Toolkit] [INFO] root 2102: Writing partition 0, shard 0
+WARNING:tensorflow:From /usr/local/lib/python3.8/dist-packages/nvidia_tao_tf1/cv/detectnet_v2/dataio/dataset_converter_lib.py:181: The name tf.python_io.TFRecordWriter is deprecated. Please use tf.io.TFRecordWriter instead.
+
+2025-08-25 06:18:45,219 [TAO Toolkit] [WARNING] tensorflow 137: From /usr/local/lib/python3.8/dist-packages/nvidia_tao_tf1/cv/detectnet_v2/dataio/dataset_converter_lib.py:181: The name tf.python_io.TFRecordWriter is deprecated. Please use tf.io.TFRecordWriter instead.
+
+2025-08-25 06:18:59,075 [TAO Toolkit] [INFO] nvidia_tao_tf1.cv.detectnet_v2.dataio.dataset_converter_lib 166: Writing partition 0, shard 1
+2025-08-25 06:18:59,075 [TAO Toolkit] [INFO] root 2102: Writing partition 0, shard 1
+2025-08-25 06:19:11,718 [TAO Toolkit] [INFO] nvidia_tao_tf1.cv.detectnet_v2.dataio.dataset_converter_lib 166: Writing partition 0, shard 2
+2025-08-25 06:19:11,718 [TAO Toolkit] [INFO] root 2102: Writing partition 0, shard 2
+2025-08-25 06:19:24,336 [TAO Toolkit] [INFO] nvidia_tao_tf1.cv.detectnet_v2.dataio.dataset_converter_lib 166: Writing partition 0, shard 3
+2025-08-25 06:19:24,337 [TAO Toolkit] [INFO] root 2102: Writing partition 0, shard 3
+2025-08-25 06:19:37,368 [TAO Toolkit] [INFO] nvidia_tao_tf1.cv.detectnet_v2.dataio.dataset_converter_lib 166: Writing partition 0, shard 4
+2025-08-25 06:19:37,368 [TAO Toolkit] [INFO] root 2102: Writing partition 0, shard 4
+2025-08-25 06:19:50,701 [TAO Toolkit] [INFO] nvidia_tao_tf1.cv.detectnet_v2.dataio.dataset_converter_lib 166: Writing partition 0, shard 5
+2025-08-25 06:19:50,701 [TAO Toolkit] [INFO] root 2102: Writing partition 0, shard 5
+2025-08-25 06:20:05,085 [TAO Toolkit] [INFO] nvidia_tao_tf1.cv.detectnet_v2.dataio.dataset_converter_lib 166: Writing partition 0, shard 6
+2025-08-25 06:20:05,085 [TAO Toolkit] [INFO] root 2102: Writing partition 0, shard 6
+2025-08-25 06:20:18,919 [TAO Toolkit] [INFO] nvidia_tao_tf1.cv.detectnet_v2.dataio.dataset_converter_lib 166: Writing partition 0, shard 7
+2025-08-25 06:20:18,919 [TAO Toolkit] [INFO] root 2102: Writing partition 0, shard 7
+2025-08-25 06:20:30,684 [TAO Toolkit] [INFO] nvidia_tao_tf1.cv.detectnet_v2.dataio.dataset_converter_lib 166: Writing partition 0, shard 8
+2025-08-25 06:20:30,684 [TAO Toolkit] [INFO] root 2102: Writing partition 0, shard 8
+2025-08-25 06:20:42,333 [TAO Toolkit] [INFO] nvidia_tao_tf1.cv.detectnet_v2.dataio.dataset_converter_lib 166: Writing partition 0, shard 9
+2025-08-25 06:20:42,333 [TAO Toolkit] [INFO] root 2102: Writing partition 0, shard 9
+2025-08-25 06:20:53,853 [TAO Toolkit] [INFO] nvidia_tao_tf1.cv.detectnet_v2.dataio.dataset_converter_lib 250: 
+Wrote the following numbers of objects:
+b'person': 27277
+
+2025-08-25 06:20:53,853 [TAO Toolkit] [INFO] nvidia_tao_tf1.cv.detectnet_v2.dataio.dataset_converter_lib 166: Writing partition 1, shard 0
+2025-08-25 06:20:53,853 [TAO Toolkit] [INFO] root 2102: Writing partition 1, shard 0
+2025-08-25 06:22:07,382 [TAO Toolkit] [INFO] nvidia_tao_tf1.cv.detectnet_v2.dataio.dataset_converter_lib 166: Writing partition 1, shard 1
+2025-08-25 06:22:07,382 [TAO Toolkit] [INFO] root 2102: Writing partition 1, shard 1
+2025-08-25 06:23:16,808 [TAO Toolkit] [INFO] nvidia_tao_tf1.cv.detectnet_v2.dataio.dataset_converter_lib 166: Writing partition 1, shard 2
+2025-08-25 06:23:16,808 [TAO Toolkit] [INFO] root 2102: Writing partition 1, shard 2
+2025-08-25 06:24:30,578 [TAO Toolkit] [INFO] nvidia_tao_tf1.cv.detectnet_v2.dataio.dataset_converter_lib 166: Writing partition 1, shard 3
+2025-08-25 06:24:30,578 [TAO Toolkit] [INFO] root 2102: Writing partition 1, shard 3
+2025-08-25 06:25:42,798 [TAO Toolkit] [INFO] nvidia_tao_tf1.cv.detectnet_v2.dataio.dataset_converter_lib 166: Writing partition 1, shard 4
+2025-08-25 06:25:42,798 [TAO Toolkit] [INFO] root 2102: Writing partition 1, shard 4
+2025-08-25 06:27:05,840 [TAO Toolkit] [INFO] nvidia_tao_tf1.cv.detectnet_v2.dataio.dataset_converter_lib 166: Writing partition 1, shard 5
+2025-08-25 06:27:05,840 [TAO Toolkit] [INFO] root 2102: Writing partition 1, shard 5
+2025-08-25 06:28:37,982 [TAO Toolkit] [INFO] nvidia_tao_tf1.cv.detectnet_v2.dataio.dataset_converter_lib 166: Writing partition 1, shard 6
+2025-08-25 06:28:37,982 [TAO Toolkit] [INFO] root 2102: Writing partition 1, shard 6
+2025-08-25 06:30:08,049 [TAO Toolkit] [INFO] nvidia_tao_tf1.cv.detectnet_v2.dataio.dataset_converter_lib 166: Writing partition 1, shard 7
+2025-08-25 06:30:08,049 [TAO Toolkit] [INFO] root 2102: Writing partition 1, shard 7
+2025-08-25 06:31:24,067 [TAO Toolkit] [INFO] nvidia_tao_tf1.cv.detectnet_v2.dataio.dataset_converter_lib 166: Writing partition 1, shard 8
+2025-08-25 06:31:24,067 [TAO Toolkit] [INFO] root 2102: Writing partition 1, shard 8
+2025-08-25 06:32:44,960 [TAO Toolkit] [INFO] nvidia_tao_tf1.cv.detectnet_v2.dataio.dataset_converter_lib 166: Writing partition 1, shard 9
+2025-08-25 06:32:44,960 [TAO Toolkit] [INFO] root 2102: Writing partition 1, shard 9
+2025-08-25 06:34:09,753 [TAO Toolkit] [INFO] nvidia_tao_tf1.cv.detectnet_v2.dataio.dataset_converter_lib 250: 
+Wrote the following numbers of objects:
+b'person': 57702
+
+2025-08-25 06:34:09,753 [TAO Toolkit] [INFO] nvidia_tao_tf1.cv.detectnet_v2.dataio.dataset_converter_lib 89: Cumulative object statistics
+2025-08-25 06:34:09,753 [TAO Toolkit] [INFO] root 2102: Cumulative object statistics
+2025-08-25 06:34:09,753 [TAO Toolkit] [INFO] nvidia_tao_tf1.cv.detectnet_v2.dataio.dataset_converter_lib 250: 
+Wrote the following numbers of objects:
+b'person': 84979
+
+2025-08-25 06:34:09,753 [TAO Toolkit] [INFO] nvidia_tao_tf1.cv.detectnet_v2.dataio.dataset_converter_lib 105: Class map. 
+Label in GT: Label in tfrecords file 
+b'person': b'person'
+2025-08-25 06:34:09,753 [TAO Toolkit] [INFO] root 2102: Class map. 
+Label in GT: Label in tfrecords file 
+b'person': b'person'
+For the dataset_config in the experiment_spec, please use labels in the tfrecords file, while writing the classmap.
+
+2025-08-25 06:34:09,754 [TAO Toolkit] [INFO] root 2102: For the dataset_config in the experiment_spec, please use labels in the tfrecords file, while writing the classmap.
+
+2025-08-25 06:34:09,754 [TAO Toolkit] [INFO] nvidia_tao_tf1.cv.detectnet_v2.dataio.dataset_converter_lib 114: Tfrecords generation complete.
+2025-08-25 06:34:09,754 [TAO Toolkit] [INFO] root 2102: TFRecords generation complete.
+2025-08-25 06:34:09,754 [TAO Toolkit] [INFO] root 2102: Dataset convert finished successfully.
+Telemetry data couldn't be sent, but the command ran successfully.
+[WARNING]: HTTPSConnectionPool(host='telemetry.metropolis.nvidia.com', port=443): Max retries exceeded with url: /api/v1/telemetry (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1131)')))
+Execution status: PASS
+2025-08-25 06:34:13,326 [TAO Toolkit] [INFO] nvidia_tao_cli.components.docker_handler.docker_handler 363: Stopping container.

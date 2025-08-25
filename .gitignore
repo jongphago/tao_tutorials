@@ -5,3 +5,11 @@
 # Python cache files.
 *.pyc
 
+.env
+**/*.hdf5
+notebooks/tao_launcher_starter_kit/ngccli
+notebooks/tao_launcher_starter_kit/data/validation_only
+notebooks/tao_launcher_starter_kit/detectnet_v2/status.json
+notebooks/tao_launcher_starter_kit/data/testing
+notebooks/tao_launcher_starter_kit/data/training
+notebooks/tao_launcher_starter_kit/data/tfrecords
