@@ -6,24 +6,8 @@ dataset_config {
   }
   image_extension: "png"
   target_class_mapping {
-    key: "car"
-    value: "car"
-  }
-  target_class_mapping {
-    key: "cyclist"
-    value: "cyclist"
-  }
-  target_class_mapping {
-    key: "pedestrian"
-    value: "pedestrian"
-  }
-  target_class_mapping {
-    key: "person_sitting"
-    value: "pedestrian"
-  }
-  target_class_mapping {
-    key: "van"
-    value: "car"
+    key: "person"
+    value: "Person"
   }
   validation_fold: 0
 }
@@ -51,33 +35,7 @@ augmentation_config {
 }
 postprocessing_config {
   target_class_config {
-    key: "car"
-    value {
-      clustering_config {
-        clustering_algorithm: DBSCAN
-        dbscan_confidence_threshold: 0.9
-        coverage_threshold: 0.00499999988824
-        dbscan_eps: 0.20000000298
-        dbscan_min_samples: 1
-        minimum_bounding_box_height: 20
-      }
-    }
-  }
-  target_class_config {
-    key: "cyclist"
-    value {
-      clustering_config {
-        clustering_algorithm: DBSCAN
-        dbscan_confidence_threshold: 0.9
-        coverage_threshold: 0.00499999988824
-        dbscan_eps: 0.15000000596
-        dbscan_min_samples: 1
-        minimum_bounding_box_height: 20
-      }
-    }
-  }
-  target_class_config {
-    key: "pedestrian"
+    key: "Person"
     value {
       clustering_config {
         clustering_algorithm: DBSCAN
@@ -108,37 +66,11 @@ evaluation_config {
   validation_period_during_training: 10
   first_validation_epoch: 30
   minimum_detection_ground_truth_overlap {
-    key: "car"
-    value: 0.699999988079
-  }
-  minimum_detection_ground_truth_overlap {
-    key: "cyclist"
-    value: 0.5
-  }
-  minimum_detection_ground_truth_overlap {
-    key: "pedestrian"
+    key: "Person"
     value: 0.5
   }
   evaluation_box_config {
-    key: "car"
-    value {
-      minimum_height: 20
-      maximum_height: 9999
-      minimum_width: 10
-      maximum_width: 9999
-    }
-  }
-  evaluation_box_config {
-    key: "cyclist"
-    value {
-      minimum_height: 20
-      maximum_height: 9999
-      minimum_width: 10
-      maximum_width: 9999
-    }
-  }
-  evaluation_box_config {
-    key: "pedestrian"
+    key: "Person"
     value {
       minimum_height: 20
       maximum_height: 9999
@@ -150,38 +82,8 @@ evaluation_config {
 }
 cost_function_config {
   target_classes {
-    name: "car"
+    name: "Person"
     class_weight: 1.0
-    coverage_foreground_weight: 0.0500000007451
-    objectives {
-      name: "cov"
-      initial_weight: 1.0
-      weight_target: 1.0
-    }
-    objectives {
-      name: "bbox"
-      initial_weight: 10.0
-      weight_target: 10.0
-    }
-  }
-  target_classes {
-    name: "cyclist"
-    class_weight: 8.0
-    coverage_foreground_weight: 0.0500000007451
-    objectives {
-      name: "cov"
-      initial_weight: 1.0
-      weight_target: 1.0
-    }
-    objectives {
-      name: "bbox"
-      initial_weight: 10.0
-      weight_target: 1.0
-    }
-  }
-  target_classes {
-    name: "pedestrian"
-    class_weight: 4.0
     coverage_foreground_weight: 0.0500000007451
     objectives {
       name: "cov"
@@ -231,19 +133,7 @@ training_config {
     scalar_logging_frequency: 50
     infrequent_logging_frequency: 5
     target_class_config {
-      key: "car"
-      value: {
-        coverage_threshold: 0.005
-      }
-    }
-    target_class_config {
-      key: "pedestrian"
-      value: {
-        coverage_threshold: 0.005
-      }
-    }
-    target_class_config {
-      key: "cyclist"
+      key: "Person"
       value: {
         coverage_threshold: 0.005
       }
@@ -269,27 +159,7 @@ training_config {
 }
 bbox_rasterizer_config {
   target_class_config {
-    key: "car"
-    value {
-      cov_center_x: 0.5
-      cov_center_y: 0.5
-      cov_radius_x: 0.40000000596
-      cov_radius_y: 0.40000000596
-      bbox_min_radius: 1.0
-    }
-  }
-  target_class_config {
-    key: "cyclist"
-    value {
-      cov_center_x: 0.5
-      cov_center_y: 0.5
-      cov_radius_x: 1.0
-      cov_radius_y: 1.0
-      bbox_min_radius: 1.0
-    }
-  }
-  target_class_config {
-    key: "pedestrian"
+    key: "Person"
     value {
       cov_center_x: 0.5
       cov_center_y: 0.5
