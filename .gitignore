@@ -8,9 +8,12 @@
 
 .env
 **/*.hdf5
+**/status.json
 notebooks/tao_launcher_starter_kit/ngccli
 notebooks/tao_launcher_starter_kit/data/validation_only
-notebooks/tao_launcher_starter_kit/detectnet_v2/status.json
 notebooks/tao_launcher_starter_kit/data/testing
 notebooks/tao_launcher_starter_kit/data/training
 notebooks/tao_launcher_starter_kit/data/tfrecords
+notebooks/tao_launcher_starter_kit/detectnet_v2/experiment_dir_unpruned*
+notebooks/tao_launcher_starter_kit/data/kitti
+notebooks/tao_launcher_starter_kit/data/*.zip

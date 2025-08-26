@@ -4,10 +4,10 @@ dataset_config {
     tfrecords_path: "/workspace/tao-experiments/data/tfrecords/kitti_trainval/*"
     image_directory_path: "/workspace/tao-experiments/data/training"
   }
-  image_extension: "png"
+  image_extension: "jpg"
   target_class_mapping {
     key: "person"
-    value: "Person"
+    value: "person"
   }
   validation_fold: 0
 }
@@ -35,7 +35,7 @@ augmentation_config {
 }
 postprocessing_config {
   target_class_config {
-    key: "Person"
+    key: "person"
     value {
       clustering_config {
         clustering_algorithm: DBSCAN
@@ -66,11 +66,11 @@ evaluation_config {
   validation_period_during_training: 10
   first_validation_epoch: 30
   minimum_detection_ground_truth_overlap {
-    key: "Person"
+    key: "person"
     value: 0.5
   }
   evaluation_box_config {
-    key: "Person"
+    key: "person"
     value {
       minimum_height: 20
       maximum_height: 9999
@@ -82,7 +82,7 @@ evaluation_config {
 }
 cost_function_config {
   target_classes {
-    name: "Person"
+    name: "person"
     class_weight: 1.0
     coverage_foreground_weight: 0.0500000007451
     objectives {
@@ -133,7 +133,7 @@ training_config {
     scalar_logging_frequency: 50
     infrequent_logging_frequency: 5
     target_class_config {
-      key: "Person"
+      key: "person"
       value: {
         coverage_threshold: 0.005
       }
@@ -159,7 +159,7 @@ training_config {
 }
 bbox_rasterizer_config {
   target_class_config {
-    key: "Person"
+    key: "person"
     value {
       cov_center_x: 0.5
       cov_center_y: 0.5
