@@ -63,8 +63,8 @@ model_config {
   arch: "resnet"
 }
 evaluation_config {
-  validation_period_during_training: 10
-  first_validation_epoch: 30
+  validation_period_during_training: 2
+  first_validation_epoch: 1
   minimum_detection_ground_truth_overlap {
     key: "person"
     value: 0.5
@@ -102,7 +102,7 @@ cost_function_config {
 }
 training_config {
   batch_size_per_gpu: 4
-  num_epochs: 120
+  num_epochs: 6
   learning_rate {
     soft_start_annealing_schedule {
       min_learning_rate: 5e-07
@@ -130,7 +130,7 @@ training_config {
   visualizer{
     enabled: true
     num_images: 3
-    scalar_logging_frequency: 50
+    scalar_logging_frequency: 3
     infrequent_logging_frequency: 5
     target_class_config {
       key: "person"
