@@ -4,7 +4,7 @@ model:
   backbone: resnet_50
   last_stride: 1
   pretrain_choice: imagenet
-  pretrained_model_path: "/model/market1501/resnet50_pretrained.tlt"
+  pretrained_model_path: "/model/market1501/resnet50_pretrained.pth"
   input_channels: 3
   input_width: 128
   input_height: 256
@@ -52,5 +52,4 @@ train:
     center_lr: 0.5
     triplet_loss_margin: 0.3
   num_epochs: 120
-  checkpoint_interval: 20
-  validation_interval: 10
+  checkpoint_interval: 10
