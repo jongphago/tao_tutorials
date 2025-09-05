@@ -17,3 +17,9 @@ notebooks/tao_launcher_starter_kit/data/tfrecords
 notebooks/tao_launcher_starter_kit/detectnet_v2/experiment_dir_unpruned*
 notebooks/tao_launcher_starter_kit/data/kitti
 notebooks/tao_launcher_starter_kit/data/*.zip
+notebooks/tao_launcher_starter_kit/data/reidentificationnet
+notebooks/tao_launcher_starter_kit/reidentificationnet/pretrained
+notebooks/tao_launcher_starter_kit/reidentificationnet/market1501
+notebooks/tao_launcher_starter_kit/evaluate_onnx/tao_pretrained_models
+notebooks/tao_launcher_starter_kit/evaluate_onnx/data
+notebooks/tao_launcher_starter_kit/evaluate_onnx/models
