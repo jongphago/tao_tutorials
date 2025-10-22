@@ -26,3 +26,5 @@ notebooks/tao_launcher_starter_kit/evaluate_onnx/models
 notebooks/tao_launcher_starter_kit/reidentificationnet/market1501_sweep
 notebooks/tao_launcher_starter_kit/reidentificationnet/swin/
 notebooks/tao_launcher_starter_kit/reidentificationnet/reid_sweep
+notebooks/tao_launcher_starter_kit/reidentificationnet/results/aihub_kaist/resnet50
+notebooks/tao_launcher_starter_kit/reidentificationnet/results/market1501/resnet50

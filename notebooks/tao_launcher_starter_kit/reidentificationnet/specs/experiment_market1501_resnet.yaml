@@ -16,10 +16,10 @@ model:
   with_flip_feature: False
   label_smooth: True
 dataset:
-  train_dataset_dir: "/data/market1501/sample_train"
-  test_dataset_dir: "/data/market1501/sample_test"
-  query_dataset_dir: "/data/market1501/sample_query"
-  num_classes: 100
+  train_dataset_dir: "/data/market1501/bounding_box_train"
+  test_dataset_dir: "/data/market1501/bounding_box_test"
+  query_dataset_dir: "/data/market1501/query"
+  num_classes: 751
   batch_size: 64
   val_batch_size: 128
   num_workers: 31
@@ -31,7 +31,7 @@ dataset:
   sampler: softmax_triplet
   num_instances: 4
 re_ranking:
-  re_ranking: True
+  re_ranking: false
   k1: 20
   k2: 6
   lambda_value: 0.3

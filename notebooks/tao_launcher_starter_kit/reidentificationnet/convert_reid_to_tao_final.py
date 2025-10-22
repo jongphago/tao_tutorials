@@ -374,7 +374,7 @@ def convert_reid_to_tao(source_model_path, target_model_path, num_classes=751):
                 'model': {
                     'backbone': 'resnet_50',
                     'num_classes': num_classes,
-                    'feat_dim': 256,
+                    'feat_dim': 2048,
                     'neck': 'bnneck',
                     'metric_loss_type': 'triplet',
                     'with_center_loss': False,
